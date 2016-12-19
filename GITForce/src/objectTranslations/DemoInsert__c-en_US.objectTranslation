@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>DemoInsert</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>DemoInserts</value>
+    </caseValues>
+    <fields>
+        <label><!-- DemoDepartment --></label>
+        <name>DemoDepartment__c</name>
+        <picklistValues>
+            <masterLabel>CSE</masterLabel>
+            <translation><!-- CSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECE</masterLabel>
+            <translation><!-- ECE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EEE</masterLabel>
+            <translation><!-- EEE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT</masterLabel>
+            <translation><!-- IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEC</masterLabel>
+            <translation><!-- MEC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DemoName --></label>
+        <name>DemoName__c</name>
+    </fields>
+    <fields>
+        <label><!-- DemoPassword --></label>
+        <name>DemoPassword__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

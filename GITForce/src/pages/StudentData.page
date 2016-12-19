@@ -1,0 +1,112 @@
+<apex:page controller="StudentData" sidebar="false">
+<apex:sectionHeader title="TITLE: STUDENT DATA "/> 
+<apex:form id="fid">
+<apex:selectRadio value="{!m_dmlOperation}">
+    <apex:selectOptions value="{!selected}">
+    </apex:selectOptions>
+</apex:selectRadio>
+    <apex:commandButton value="SUBMIT" action="{!manipOperation}"/>    
+</apex:form>
+
+<apex:form id="fidinsert" rendered="{!m_iDisplay}">
+<table>
+<tr>
+<td>StudentName</td>
+<td><apex:inputText value="{!m_StudentName}"/><br/></td>
+</tr>
+<tr>
+<td>FatherName</td>
+<td><apex:inputText value="{!m_FatherName}"/><br/></td>
+</tr>
+<tr>
+<td>GFatherName</td>
+<td><apex:inputText value="{!m_GFatherName}"/><br/></td>
+</tr>
+<tr>
+<td>Telephone</td>
+<td><apex:inputText value="{!m_Telephone }"/><br/></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><apex:inputText value="{!m_Password}"/><br/></td>
+</tr>
+<tr>
+<td>
+<apex:commandButton action="{!save}" value="Insert new record"/><br/>
+</td>
+</tr>
+</table>
+</apex:form>
+
+
+
+<apex:form id="fidupdate" rendered="{!m_uDisplay}">
+<table>
+<tr>
+<td>enter student Student Name</td>
+<td><apex:inputText value="{!m_SearchString}"/></td>
+</tr>
+<tr>
+<td><apex:commandButton value="Search"  action="{!searchStudentData}" /></td>
+</tr>
+<tr>
+<td>Student Name</td>
+<td><apex:inputText value="{!m_StudentName}"/><br/></td>
+</tr>
+<tr>
+<td>Father Name</td>
+<td><apex:inputText value="{!m_FatherName}"/><br/></td>
+</tr>
+<tr>
+<td>GFather Name</td>
+<td><apex:inputText value="{!m_GFatherName}"/><br/></td>
+</tr>
+<tr>      
+<td>Telephone</td>
+<td><apex:inputText value="{!m_Telephone}"/><br/></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><apex:inputText value="{!m_Password}"/><br/></td>
+</tr>            
+<tr>
+<td><apex:commandButton value="update" action="{!update1}" /></td>
+</tr>
+</table>             
+</apex:form>
+
+<apex:form id="fiddelete" rendered="{!m_dDisplay}">
+<table>
+<tr>
+<td>enter student Student Name</td>
+<td><apex:inputText value="{!m_SearchString}"/></td>
+</tr>
+<tr>
+<td><apex:commandButton value="Search"  action="{!searchStudentData}" /></td>
+</tr>
+<tr>
+<td>Student Name</td>
+<td><apex:inputText value="{!m_StudentName}"/><br/></td>
+</tr>
+<tr>
+<td>Father Name</td>
+<td><apex:inputText value="{!m_FatherName}"/><br/></td>
+</tr>
+<tr>
+<td>GFather Name</td>
+<td><apex:inputText value="{!m_GFatherName}"/><br/></td>
+</tr>
+<tr>      
+<td>Telephone</td>
+<td><apex:inputText value="{!m_Telephone}"/><br/></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><apex:inputText value="{!m_Password}"/><br/></td>
+</tr>            
+<tr>
+<td><apex:commandButton value="delete" action="{!delete1}" /></td>
+</tr>
+</table>             
+</apex:form>
+</apex:page>

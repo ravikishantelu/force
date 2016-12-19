@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>DemoReportCard</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>DemoReportCards</value>
+    </caseValues>
+    <fields>
+        <label><!-- English --></label>
+        <name>English__c</name>
+    </fields>
+    <fields>
+        <label><!-- FatherName --></label>
+        <name>FatherName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gsection --></label>
+        <name>Gsection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hindi --></label>
+        <name>Hindi__c</name>
+    </fields>
+    <fields>
+        <label><!-- StudentName --></label>
+        <name>StudentName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Telugu --></label>
+        <name>Telugu__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total --></label>
+        <name>Total__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

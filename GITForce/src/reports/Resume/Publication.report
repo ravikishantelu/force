@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Publication__c.Image__c</field>
+    </columns>
+    <columns>
+        <field>Publication__c.ISBN_Number__c</field>
+    </columns>
+    <columns>
+        <field>Publication__c.Type__c</field>
+    </columns>
+    <columns>
+        <field>Publication__c.Publication_Date__c</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Publication__c.Info__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Publication</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Publication__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Publication__c.Publication_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,54 @@
+<apex:page controller="DemoInsertClass" sidebar="false">
+<apex:form >
+<apex:pageBlock >
+<table width="600">
+<tr>
+<td>
+DemoName
+</td>
+<td>
+<apex:inputText value="{!m_DemoName}"/>
+</td>
+</tr>
+
+<tr>
+<td>
+DemoPassword
+</td>
+<td>
+<apex:inputText value="{!m_DemoPassword}"/>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>
+DemoDepartment
+</td>
+<td>
+<apex:outputLabel style="font-weight:bold"/>
+<apex:selectList value="{!m_DemoDepartment}"/>
+<apex:selectOptions value="{!DemoDepartmentOptions}" />
+</td>
+</tr>
+
+<!--
+<tr>
+ <apex:outputlabel value="DemoDepartment" style="font-weight:bold"/>
+  <apex:selectlist value="{!m_DemoDepartment}" multiselect="false" size="1">
+  <apex:selectoptions value="{!m_DemoDepartment}"/>
+  </apex:selectlist>
+ </tr>
+ -->
+ 
+</table>
+<apex:pageBlockButtons >
+<apex:commandButton value="Submit" action="{!insert1}"/>
+</apex:pageBlockButtons>
+</apex:pageBlock>
+
+</apex:form>
+  
+</apex:page>

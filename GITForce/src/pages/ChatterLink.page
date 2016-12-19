@@ -1,0 +1,22 @@
+<apex:page >
+    <style>
+        #section_header {
+            display:none;
+        }
+        .publishercontainer ul.publisherFeedItemTypeChoices {
+            display:none;
+        }
+        .feedrightbar {
+            display:none;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            chatter.getPublisher().openTypeSpecificPanel(this, 'LinkPost', 'LinkPost', event);
+            document.getElementById("publishersharebutton").disabled = false;
+        };
+    </script>
+    <apex:form >
+        <chatter:feedWithFollowers entityId="0039000001kyma8"/>
+    </apex:form>
+</apex:page>

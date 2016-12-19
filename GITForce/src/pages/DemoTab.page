@@ -1,0 +1,27 @@
+<apex:page Controller="StudentRegistration">
+    <apex:pageblock title="EduForce" mode="edit">
+    
+            <apex:tabPanel switchType="tabs">
+                       <apex:tab label="Personal Details" name="Personal_Details">
+                       
+                       
+                       
+                       
+               
+                   
+                   <!--> <apex:outputLabel  value="StudentName"/>
+                    <apex:inputText value="{!Name}"/></br></br>-->
+                       
+                     
+                       
+                       
+                       
+                       </apex:tab>
+                       <apex:tab label="Student Details" name="Student_Details"></apex:tab>
+                    
+            
+            </apex:tabPanel>
+            
+   </apex:pageblock>
+            
+</apex:page>

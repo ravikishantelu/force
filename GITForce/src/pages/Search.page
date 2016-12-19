@@ -1,0 +1,21 @@
+<apex:page controller="StudentRecordSearch1">
+<apex:form >
+<apex:pageBlock >
+<apex:pageBlockSection title="studentdetais" columns="2" >
+<apex:outputlabel value="StudentName"/>
+<apex:inputText value="{!Name}" id="studname"/>
+<br/>
+<apex:commandButton value="search" action="{!search}" id="cmdsearch"/>
+<apex:outputlabel value="sno" />
+<apex:inputText value="{!sno}" id="sn"/>
+<apex:outputlabel value="address "/>
+<apex:inputText value="{!address}" id="addr"/>
+
+<apex:commandButton value="insert" action="{!insert1}" id="cmdupset"/>
+<apex:commandButton value="update" action="{!update1}" id="cmdsearchh"/>
+<apex:commandButton value="delete" action="{!delete1}" id="cmddelete"/>
+
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

@@ -1,0 +1,86 @@
+<apex:page controller="EditStudent" sidebar="false">
+<apex:form >
+<apex:pageBlock id="blocktable">
+   
+    <apex:pageBlockTable value="{!Student}" var="e" id="tble" >
+   
+   
+    <apex:column headerValue="Action" >
+    <apex:commandLink value="edit" action="{!editStudent}">
+    <apex:param name="empid" value="{!e.Id}"/>
+    </apex:commandLink>
+    </apex:column>
+   
+   
+    <apex:column headerValue="Student Name" >
+    <apex:outputtext value="{!e.m_StudentName}" rendered="{!e.m_TextMode}"/> 
+    <apex:inputText value="{!e.m_StudentName}" rendered="{!e.m_EditMode}"/>
+    </apex:column>
+   
+   
+   
+    <apex:column headerValue="Fathers Name" >
+    <apex:outputtext value="{!e.m_FatherName}" rendered="{!e.m_TextMode}"/> 
+    <apex:inputText value="{!e.m_FatherName}" rendered="{!e.m_EditMode}"/>
+    </apex:column>
+    
+    
+    
+    <apex:column headerValue="Grand Father" >
+    <apex:outputtext value="{!e.m_GFatherName}" rendered="{!e.m_TextMode}"/> 
+    <apex:inputText value="{!e.m_GFatherName}" rendered="{!e.m_EditMode}"/>
+    </apex:column>
+    
+    
+    
+    <apex:column headerValue="Date of Birth" >
+    <apex:outputtext value="{!e.m_DOB}" rendered="{!e.m_TextMode}"/> 
+    <apex:inputText value="{!e.m_DOB}" rendered="{!e.m_EditMode}"/>
+    </apex:column>
+    
+    
+    <apex:column headerValue="Status" >
+    <apex:outputtext value="{!e.m_StudStatus}" rendered="{!e.m_TextMode}"/> 
+    <apex:inputText value="{!e.m_StudStatus}" rendered="{!e.m_EditMode}"/>
+    </apex:column>
+    
+    
+    
+    <apex:column headerValue="House No" >
+    <apex:outputtext value="{!e.m_HouseNo}" rendered="{!e.m_TextMode}"/> 
+    <apex:inputText value="{!e.m_HouseNo}" rendered="{!e.m_EditMode}"/>
+    </apex:column>
+    
+    
+    <apex:column headerValue="Telephone" >
+    <apex:outputtext value="{!e.m_Telephone}" rendered="{!e.m_TextMode}"/> 
+    <apex:inputText value="{!e.m_Telephone}" rendered="{!e.m_EditMode}"/>
+    </apex:column>
+    
+    
+    
+    <apex:column headerValue="Nationality" >
+    <apex:outputtext value="{!e.m_Nationality}" rendered="{!e.m_TextMode}"/> 
+    <apex:inputText value="{!e.m_Nationality}" rendered="{!e.m_EditMode}"/>
+    </apex:column>
+    
+    
+    <apex:column headerValue="State" >
+    <apex:outputtext value="{!e.m_State}" rendered="{!e.m_TextMode}"/> 
+    <apex:inputText value="{!e.m_State}" rendered="{!e.m_EditMode}"/>
+    </apex:column>
+    
+    
+    
+    <apex:column headerValue="City" >
+    <apex:outputtext value="{!e.m_City}" rendered="{!e.m_TextMode}"/> 
+    <apex:inputText value="{!e.m_City}" rendered="{!e.m_EditMode}"/>
+    </apex:column>
+   
+     
+    </apex:pageBlockTable>
+    
+    <apex:commandButton value="update"  />
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

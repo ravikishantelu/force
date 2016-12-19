@@ -1,0 +1,15 @@
+<apex:page Controller="productAdd" sidebar="false">
+    <table  width="90%">
+        <apex:form >
+                <tr>
+                <apex:commandButton value="Add Quantity" action="{!AddQuantity}"/>
+                </tr>
+                
+                <tr>
+                <apex:commandButton value="Sub Quantity" action="{!SubQuantity}"/>
+                </tr> 
+                
+                             
+        </apex:form> 
+    </table>
+</apex:page>

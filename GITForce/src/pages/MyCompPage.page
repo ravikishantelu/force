@@ -1,0 +1,10 @@
+<apex:page id="page_id">
+ 
+    <apex:sectionHeader title="Page to Component Test" />
+    
+    <!-- COMPONENT CODE STARTS HERE -->
+    <c:MyCompComponent id="comp_id"></c:MyCompComponent> 
+    <!-- COMPONENT CODE STARTS ENDS -->
+    <hr />
+ 
+</apex:page>

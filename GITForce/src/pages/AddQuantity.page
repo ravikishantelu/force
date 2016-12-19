@@ -1,0 +1,10 @@
+<apex:page controller="productAdd">
+  <apex:form >
+  <apex:pageBlock >
+  Please Go Back 
+  <apex:commandButton value="<--" action="{!Back}"/>
+  
+  </apex:pageBlock>
+  
+  </apex:form>
+</apex:page>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Smartsheet Config</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Smartsheet Config</value>
+    </caseValues>
+    <fields>
+        <label><!-- API Base URL --></label>
+        <name>API_Base_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- API Version --></label>
+        <name>API_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorize URL --></label>
+        <name>Authorize_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Id --></label>
+        <name>Client_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Secret --></label>
+        <name>Client_Secret__c</name>
+    </fields>
+    <fields>
+        <label><!-- Redirect URL --></label>
+        <name>Redirect_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scope --></label>
+        <name>Scope__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

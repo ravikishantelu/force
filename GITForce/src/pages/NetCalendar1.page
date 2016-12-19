@@ -1,0 +1,23 @@
+<apex:page standardController="Account" extensions="Tab1Extension" >
+<apex:pageMessages />
+
+    <script>
+        function setFocusOnLoad() {} 
+    </script>
+     
+    <apex:form id="th_form">
+    <table>
+    <tr>
+    
+    <td width="250px">
+    <apex:OutputLabel value="Start Date" for="c_startDate" />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <apex:inputField id="c_startDate" value="{!Start.ActivityDate}" />
+    </td>
+    </tr>
+    </table>
+    </apex:form>
+  
+    <p/>
+    
+</apex:page>

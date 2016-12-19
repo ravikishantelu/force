@@ -1,0 +1,22 @@
+<apex:page >
+<apex:sectionHeader title="JSHistory"/>
+  <apex:pageBlock id="pid">
+  <script>
+  function back()
+  {
+      window.history.back()
+  }
+  </script>
+  <script>
+  function forward()
+  {
+      window.history.forward()
+  }
+  </script>
+  
+      <apex:form id="fid">
+          <apex:commandButton onclick="back()" value="Back" id="cid1"/>
+          <apex:commandButton onclick="forward()" value="forward" id="cid2"/>
+      </apex:form>
+  </apex:pageBlock>
+</apex:page>

@@ -1,0 +1,26 @@
+<apex:page controller="DemoEditStudent" sidebar="false" showHeader="false">
+  <apex:form >
+        <apex:pageBlock id="blocktable">
+              <apex:pageBlockTable value="{!Student}" var="e" id="tble" >
+                    
+               <!--    <apex:column headerValue="Action" >
+                          <apex:commandLink value="edit" action="{!editStudent}">
+                               <apex:param name="empid" value="{!e.Id}"/>
+                          </apex:commandLink>
+                    </apex:column>-->
+   
+                    <apex:column headerValue="Student Name" >
+                          <apex:outputtext value="{!e.m_StudentName}" rendered="{!e.m_TextMode}"/> 
+                          <apex:inputText value="{!e.m_StudentName}" rendered="{!e.m_EditMode}"/>
+                    </apex:column>
+     
+                    <apex:column headerValue="Date of Birth" >
+                          <apex:outputtext value="{!e.m_DOB}" rendered="{!e.m_TextMode}"/> 
+                          <apex:inputText value="{!e.m_DOB}" rendered="{!e.m_EditMode}"/>
+                    </apex:column>
+                    
+             </apex:pageBlockTable>
+             <apex:commandButton value="update"/>
+        </apex:pageBlock>
+  </apex:form>
+</apex:page>

@@ -1,0 +1,21 @@
+<apex:page standardController="DynamicPicklist__c" recordSetVar="Dynamic" standardStylesheets="false">
+<apex:form >
+<apex:dataTable value="{!Dynamic}"  var="D" border="5" cellspacing="10" cellpadding="10"  align="center" bgcolor="red">
+
+<apex:column headerValue="ID">
+<apex:repeat value="{!D}"> 
+<apex:outputField value="{!D.name}"/><br/>
+</apex:repeat>
+</apex:column>
+
+
+<apex:column headerValue="CITY">
+<apex:repeat value="{!D}"> 
+<apex:outputField value="{!D.PicklistValue__c}"/><br/>
+</apex:repeat>
+</apex:column>
+
+
+</apex:dataTable>
+</apex:form>
+</apex:page>

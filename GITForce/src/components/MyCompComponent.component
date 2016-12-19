@@ -1,0 +1,6 @@
+<apex:component id="comp_id" controller="MyCompController">
+    <h1>Component Text :</h1>
+    <apex:form id="pageform_id">
+        <apex:inputtext id="comptextinput" value="{!compInputText}" />
+    </apex:form>
+</apex:component>

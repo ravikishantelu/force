@@ -1,0 +1,59 @@
+<apex:page sidebar="false" controller="DemoReportCard" showHeader="false" >
+    <apex:form >
+     <apex:pageblock title="REPORT CARD">
+       <apex:outputlabel value="Gsection"/>
+      <!--   <apex:selectList value="{!m_Gsection}" size="1">
+          <apex:selectOptions value="{!Gsections}"/>
+         
+         </apex:selectList>
+         -->
+         
+          <apex:selectList value="{!m_Gsection}" multiselect="false" size="1">
+               <apex:selectOption itemvalue="None" itemlabel="--None--">
+               </apex:selectOption>
+               <apex:selectOption itemvalue="401" itemlabel="401">
+               </apex:selectOption>
+               <apex:selectOption itemvalue="402" itemlabel="402">
+               </apex:selectOption>
+               <apex:selectOption itemvalue="403" itemlabel="403">
+               </apex:selectOption>
+          </apex:selectList>
+         
+         
+     <apex:commandButton value="search"  action="{!search}" >   
+      </apex:commandButton>
+       
+      
+      <apex:pageblock >
+       <apex:pageBlockTable value="{!lstcard}"  var="t">
+      <apex:outputtext value="{!m_StudentName}"/>
+          <apex:column value="{!t.StudentName__c}" />
+          
+       <apex:outputtext value="{!m_Fathername}"/>
+       <apex:column value="{!t.FatherName__c }"/>
+        
+         <apex:outputtext value="{!m_Telugu}"/>
+          <apex:column value="{!t.Telugu__c }"/>
+        
+        <apex:outputtext value="{!m_Hindi}"/>
+          <apex:column value="{!t.Hindi__c}"/>
+          
+          <apex:outputtext value="{!m_English}"/>
+          <apex:column value="{!t.English__c }"/>
+        
+        <apex:outputtext value="{!m_Total}"/>
+          <apex:column value="{!t.Total__c  }"/>  
+       
+      <!-- <apex:outputtext value="{!percentage}"/>
+          <apex:column value="{!t.percentage__c }"/>  
+          
+          <apex:outputtext value="{!grade}"/>
+          <apex:column value="{!t.grade__c }"/>
+      -->
+      
+      </apex:pageBlockTable>
+      
+      </apex:pageblock>
+      </apex:pageblock>
+    </apex:form>
+</apex:page>

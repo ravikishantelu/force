@@ -1,0 +1,25 @@
+<apex:page standardController="Account" >
+
+<apex:pageMessages />
+<apex:outputPanel id="out">
+   <style>
+      .activeTab {background-color: #236FBD; color:white; background-image:none; font-family:Arial}
+      .inactiveTab { background-color: lightgrey; color:black; background-image:none}
+   </style>
+   
+   
+      <apex:tabPanel switchType="client" selectedTab="tab1" id="AccountTabPanel" 
+                      tabClass="activeTab" inactiveTabClass="inactiveTab" disabledTabClass="inactiveTab"
+                      rendered="true">  
+                       
+      <apex:tab label="Tab1" name="Tab1" rendered="true" id="tab1">
+      </apex:tab>
+          
+            
+      <apex:tab label="Tab2" name="Tab2" rendered="true" id="tab2">
+               </apex:tab>
+      
+         
+   </apex:tabPanel>
+</apex:outputPanel>
+</apex:page>

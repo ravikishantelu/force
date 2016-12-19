@@ -1,0 +1,8 @@
+<apex:page >
+<!--
+    <apex:form >
+        <apex:commandButton action="{!getResult}" value="Submit"> </apex:commandButton>
+        <br/><br/>        {!myresponse}
+    </apex:form>
+    -->
+</apex:page>

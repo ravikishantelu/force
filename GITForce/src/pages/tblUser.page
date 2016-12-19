@@ -1,0 +1,70 @@
+<apex:page controller="tblUser" sidebar="false">
+
+<apex:form id="formid">
+<apex:pageBlock id="pbid" title="Login">
+
+<table cellpadding="0" cellspacing="0" border="0" width="600">
+
+<tr>
+<td width="150" style="padding-left: 55px;">
+UserName
+</td>
+<td width="35">&nbsp;</td>
+<td width="415">
+<apex:inputText value="{!m_Username}"/>
+</td>
+</tr>
+
+
+<tr>
+<td width="150" style="padding-left: 55px;">
+Password
+</td>
+<td width="35">&nbsp;</td>
+<td width="415">
+<apex:inputsecret value="{!m_Password}"/>
+</td>
+</tr>
+
+
+<tr>
+<td width="150" style="padding-left: 55px;">
+</td>
+<td width="35">&nbsp;</td>
+<td width="415">
+<apex:commandButton value="login" id="unameid" onclick="Javascript:validatelogin();"/>
+<apex:commandButton value="clear" id="clearid" onclick="Javascript:validateclear();"/>
+
+</td>
+</tr>
+
+
+
+
+
+
+</table>
+</apex:pageBlock>
+
+<script>
+function validateloginform()
+{
+var lg=document.getElementById("$component.formid.pbid.m_Username").value;
+if(lg.length<8)
+{
+alert("Invalid Username");
+return false;
+}
+</script>
+
+
+<script>
+function validateclearform()
+{
+document.getElementById("$component.formid.pbid.m_Username").value=" ";
+document.getElementById("$component.formid.pbid.m_Password").value=" ";
+}
+</script>
+</apex:form>
+
+</apex:page>

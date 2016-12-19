@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;var j$ = jQuery.noConflict();jq$(document).ready(function(){        jq$(&quot;#acc7&quot;).change(function(){                                 if(jq$(&quot;#acc7&quot;).val() == &apos;Agriculture&apos;){                         jq$(&quot;#00N900000093dIi&quot;).val(&apos;Agriculture&apos;);                }         });});&lt;/script&gt;</body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>wide</width>
+</HomePageComponent>

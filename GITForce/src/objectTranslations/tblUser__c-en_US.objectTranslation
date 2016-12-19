@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>tblUser</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>tblUsers</value>
+    </caseValues>
+    <fields>
+        <label><!-- Password --></label>
+        <name>Password__c</name>
+        <relationshipLabel><!-- tblUsers --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

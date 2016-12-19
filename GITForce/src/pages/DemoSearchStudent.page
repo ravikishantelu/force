@@ -1,0 +1,15 @@
+<apex:page controller="DemoSearchStudent">
+<apex:form >
+<apex:pageBlock >
+<apex:pageBlockSection title="studentdetais" columns="2" >
+<apex:outputlabel value="StudentName"/>
+<apex:inputText value="{!m_StudentName}" id="studname"/>
+<br/>
+<apex:commandButton value="search" action="{!search}" id="cmdsearch"/>
+<apex:outputlabel value="DOB" />
+<apex:inputText value="{!m_DOB}" id="sn"/>
+
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

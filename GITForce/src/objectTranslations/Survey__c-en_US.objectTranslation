@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Survey</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Surveys</value>
+    </caseValues>
+    <fields>
+        <label><!-- Completed URL --></label>
+        <name>Completed_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Questions Per Page --></label>
+        <name>Questions_Per_Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site URL --></label>
+        <name>Site_URL__c</name>
+    </fields>
+    <layouts>
+        <layout>Survey Layout</layout>
+        <sections>
+            <label><!-- Application Links --></label>
+            <section>Application Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Close_Survey --></label>
+        <name>Close_Survey</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Invitation --></label>
+        <name>Create_Invitation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Edit_Questions --></label>
+        <name>Edit_Questions</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- createInvite --></label>
+        <name>createInvite</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- sendInvitations --></label>
+        <name>sendInvitations</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,12 @@
+<apex:page standardController="DynamicPicklist__c" sidebar="false" >
+    <apex:form >
+        <apex:pageBlock id="theBlock">
+            <apex:pageBlockSection >
+            <apex:inputCheckbox value="{!DynamicPicklist__c.Backlogs__c}">
+                <apex:actionSupport event="onchange" reRender="theBlock"/>
+            </apex:inputCheckbox><br/>
+            <apex:inputField value="{!DynamicPicklist__c.No_of_Backlogs__c}" rendered="{!(DynamicPicklist__c.Backlogs__c == true)}"/>
+            </apex:pageBlockSection>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

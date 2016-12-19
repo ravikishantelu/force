@@ -1,0 +1,203 @@
+<apex:page controller="StudentRegistration" sidebar="false">
+<apex:form id="fid">
+<apex:pageBlock id="pbid" title="Student Registration">
+<table cellpadding="0" cellspacing="0" border="0" width="600">
+
+
+
+
+
+<tr>
+<td width="150" style="padding-left: 55px;">
+Student Name
+</td>
+<td width="35">&nbsp;</td>
+<td width="415">
+<apex:inputText value="{!m_StudentName}"/>
+</td>
+</tr>
+
+
+
+<tr>
+<td width="150" style="padding-left: 55px;">
+Password
+</td>
+<td width="35">&nbsp;</td>
+<td width="415">
+<apex:inputField value="{!m_Password.Password__c}"/>
+</td>
+</tr>
+
+
+
+<tr>
+<td width="150" style="padding-left: 55px;">
+Fathers Name
+</td>
+<td width="35">&nbsp;</td>
+<td width="415">
+<apex:inputText value="{!m_FatherName}"/>
+</td>
+</tr>
+
+<tr>
+<td width="150" style="padding-left: 55px;">
+GrandFathers Name
+</td>
+<td width="35">&nbsp;</td>
+<td width="415">
+<apex:inputText value="{!m_GFatherName}"/>
+</td>
+</tr>
+
+
+<tr>
+<td width="150" style="padding-left: 55px;">
+DOB
+</td>
+<td width="35">&nbsp;</td>
+<td width="415">
+<apex:inputField value="{!m_DOB.DOB__c}"/>
+</td>
+</tr>
+
+
+<tr>
+<td width="150" style="padding-left: 55px;">
+Status
+</td>
+<td width="35">&nbsp;</td>
+<td width="415">
+<apex:inputCheckbox value="{!m_StudStatus}"/>
+</td>
+</tr>
+
+
+<tr>
+<td width="150" style="padding-left: 55px;">
+House No
+</td>
+<td width="35">&nbsp;</td>
+<td width="415">
+<apex:inputField value="{!m_HouseNo.HouseNo__c}"/>
+</td>
+</tr>
+
+<tr>
+<td width="150" style="padding-left: 55px;">
+Telephone
+</td>
+<td width="35">&nbsp;</td>
+<td width="415">
+<apex:inputField value="{!m_Telephone.Telephone__c}"/>
+</td>
+</tr>
+
+
+
+
+
+
+
+<tr>
+<td width="150" style="padding-left: 55px;">
+
+Nationality
+</td>
+<td width="35">&nbsp;</td>
+<td width="415">
+<apex:outputLabel >
+          </apex:outputLabel>
+          <apex:selectList value="{!m_Nationality}" multiselect="false" size="1">
+               <apex:selectOption itemvalue="India" itemlabel="India">
+               </apex:selectOption>
+               <apex:selectOption itemvalue="Australia" itemlabel="Australia">
+               </apex:selectOption>
+                <apex:selectOption itemvalue="American" itemlabel="American">
+               </apex:selectOption>
+                <apex:selectOption itemvalue="Pakisthan" itemlabel="Pakisthan">
+               </apex:selectOption>
+                <apex:selectOption itemvalue="Sri Lanka" itemlabel="Sri Lanka">
+               </apex:selectOption>               
+           </apex:selectList>
+</td>
+</tr>           
+
+<tr>
+<td width="150" style="padding-left: 55px;">
+
+State
+</td>
+<td width="35">&nbsp;</td>
+<td width="415">
+<apex:outputLabel >
+          </apex:outputLabel>
+          <apex:selectList value="{!m_State}" multiselect="false" size="1">
+               <apex:selectOption itemvalue="Andhra Pradesh" itemlabel="Andhra Pradesh">
+               </apex:selectOption>
+               <apex:selectOption itemvalue="Orissa" itemlabel="Orissa">
+               </apex:selectOption>
+                <apex:selectOption itemvalue="Madhya Pradesh" itemlabel="Madhya Pradesh">
+               </apex:selectOption>
+                <apex:selectOption itemvalue="New Delhi" itemlabel="New Delhi">
+               </apex:selectOption>
+                <apex:selectOption itemvalue="Punjab" itemlabel="Punjab">
+               </apex:selectOption>               
+           </apex:selectList>
+</td>
+</tr>           
+
+<tr>
+<td width="150" style="padding-left: 55px;">
+
+City
+</td>
+<td width="35">&nbsp;</td>
+<td width="415">
+<apex:outputLabel >
+          </apex:outputLabel>
+          <apex:selectList value="{!m_City}" multiselect="false" size="1">
+               <apex:selectOption itemvalue="Hyderabad" itemlabel="Hyderabad">
+               </apex:selectOption>
+               <apex:selectOption itemvalue="Vishakapatnam" itemlabel="Vishakapatnam">
+               </apex:selectOption>
+                <apex:selectOption itemvalue="Jeypore" itemlabel="Jeypore">
+               </apex:selectOption>
+                <apex:selectOption itemvalue="Agra" itemlabel="Agra">
+               </apex:selectOption>
+                <apex:selectOption itemvalue="Chandigarh" itemlabel="Chandigarh">
+               </apex:selectOption>               
+           </apex:selectList>
+</td>
+</tr>           
+
+<tr>
+<td width="150" style="padding-left: 55px;">
+
+Gender
+</td>
+<td width="35">&nbsp;</td>
+<td width="415">
+<apex:outputLabel >
+          </apex:outputLabel>
+          <apex:selectList value="{!m_Gender}" multiselect="false" size="1">
+               <apex:selectOption itemvalue="Male" itemlabel="Male">
+               </apex:selectOption>
+               <apex:selectOption itemvalue="Female" itemlabel="Female">
+               </apex:selectOption>
+                          </apex:selectList>
+</td>
+</tr>           
+
+
+<apex:pageBlockButtons >
+<apex:commandButton value="INSERT" action="{!InsertNewRecord"/>
+</apex:pageBlockButtons>
+
+
+</table>
+</apex:pageBlock>
+
+</apex:form>
+</apex:page>

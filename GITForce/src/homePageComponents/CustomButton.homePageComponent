@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;span&gt;&amp;lt;html&amp;gt;&lt;br&gt;&lt;br&gt; &lt;/span&gt;&amp;lt;script&amp;gt;&lt;br&gt;var url =window.location.href;&lt;br&gt;window.onload = function() {&lt;br&gt;if(url.indexOf(&amp;#39;/500&amp;#39;)) != -1 &amp;amp;&amp;amp; url.indexOf(&amp;#39;/e&amp;#39;) != -1)&lt;br&gt;document.getElementById(&amp;#39;topButtonRow&amp;#39;).innerHTML = document.getElementById(&amp;#39;topButtonRow&amp;#39;).innerHTML + &amp;#39;&amp;lt;a class=&amp;quot;btn&amp;quot; style=&amp;quot;padding: 4px 3px; margin: 0 2px; text-decoration: none;&amp;quot; target=&amp;quot;_blank&amp;quot; href=&amp;quot;&amp;lt;a href=&amp;quot;&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;&amp;lt;font size=&amp;quot;2&amp;quot;&amp;gt;http://www.google.com&amp;lt;/font&amp;gt;&amp;lt;/a&amp;gt;&amp;quot;&amp;gt;Google.com&amp;lt;/a&amp;gt;&amp;#39;;&lt;br&gt;}&lt;br&gt;&lt;br&gt;&amp;lt;/script&amp;gt;&lt;br&gt;&amp;lt;/html&amp;gt;&lt;br&gt;&lt;div id=&quot;cke_pastebin&quot; style=&quot;width: 1px; height: 1px;&quot;&gt;
+	 &lt;/div&gt;</body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>narrow</width>
+</HomePageComponent>

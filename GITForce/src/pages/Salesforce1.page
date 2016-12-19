@@ -1,0 +1,49 @@
+<apex:page standardController="Account" >
+    <apex:stylesheet value="{!URLFOR($Resource.OneStarter,'icons.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.OneStarter,'styles.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.OneStarter,'OneStarter.css')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.jquery)}"/>
+    <apex:includeScript value="{!URLFOR($Resource.TouchSwipe,'jquery.touchSwipe.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.OneStarter,'jquery.onestarter.js')}"/>
+    <apex:includeScript value="/canvas/sdk/js/publisher.js"/>
+    
+    
+    <div id="one-app">
+        <apex:form >
+            <apex:outputPanel id="errors">
+                    <apex:pageMessages />
+            </apex:outputPanel>
+            <div id="form">
+                <h2>Test</h2>                    
+                    <section>
+                        <apex:inputfield value="{!Account.OwnerId}" />               
+                        <apex:commandButton value="Change" rerender="errors"  />
+                    </section>               
+            </div>  
+
+            <apex:outputpanel id="results"  >
+                <div id="detail-example">               
+                    <h2>Account Information</h2>
+                    <section>
+                        <label class="field-label">Account Name</label>
+                        <span class="field-value"><apex:outputField value="{!Account.Name}" /></span>
+                    </section>
+                    <section>
+                        <label class="field-label">Account Phone</label>
+                        <span class="field-value"><apex:outputField value="{!Account.Phone}" /></span>
+                    </section>
+
+                </div>       
+                <apex:commandButton value="Error" rerender="errors" oncomplete="restyle();" />
+                <apex:commandButton value="Go To Page" />
+
+            </apex:outputpanel>
+        </apex:form> 
+    </div>
+    <script>
+    var s1 = {};
+    $(document).ready(function() {
+        s1 = $('div#one-app').oneStarter('record-action');
+       });
+</script>
+</apex:page>
