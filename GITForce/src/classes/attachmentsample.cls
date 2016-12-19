@@ -1,3 +1,4 @@
+//Created class for Sample attachment
 public class attachmentsample {
 
     public attachmentsample(ApexPages.StandardController controller) {
